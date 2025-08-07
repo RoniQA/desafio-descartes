@@ -1,0 +1,33 @@
+{
+  "name": "desafio-descartes-automacao",
+  "version": "1.0.0",
+  "description": "Projeto de automação de testes com Playwright para validar evento de long click",
+  "main": "cypress/e2e/long-click-test.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open",
+    "test:headless": "cypress run --headless",
+    "test:long-click": "node cypress/e2e/long-click-test.js",
+    "test:codepen": "npx cypress run --spec \"cypress/e2e/real-codepen-test.cy.js\""
+  },
+  "keywords": [
+    "playwright",
+    "cypress",
+    "automation",
+    "testing",
+    "long-click",
+    "desafio-descartes"
+  ],
+  "author": "Desafio Técnico",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^14.5.3"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
